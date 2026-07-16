@@ -1,0 +1,59 @@
+# StreamBox Privacy Policy
+
+**Last updated:** 16 July 2026  
+**App:** StreamBox (`com.alicious.streambox`)  
+**Contact:** alicious.apps@gmail.com
+
+## Summary
+
+StreamBox is a playlist / media player. You add your own M3U URLs or XTREAM credentials.  
+StreamBox does **not** host, sell, or provide media content.
+
+## Data we store on your device
+
+- Playlist names and source metadata (M3U URL or XTREAM server / username / password)
+- Channel lists, categories, and favorites
+- Onboarding completion flag
+
+This data stays on your device unless you back up the device with your OS vendor.
+
+## Analytics & crash reporting
+
+When Firebase is configured for a build:
+
+- **Firebase Analytics** — anonymous event names (e.g. playlist added, channel played). No credentials or stream URLs.
+- **Firebase Crashlytics** — anonymous crash stack traces to improve stability.
+
+Until Firebase config files are added, events are logged locally only.
+
+## Network
+
+The app contacts:
+
+- M3U playlist URLs you enter
+- XTREAM panel servers you enter
+- Stream media URLs from those playlists
+- Google Firebase endpoints (when Analytics / Crashlytics are enabled)
+
+Those third parties process data under their own policies.
+
+## Permissions
+
+- **Internet** — to download playlists and play streams
+
+## Your choices
+
+- Delete playlists / favorites in the app
+- Uninstall the app to remove local data
+
+## Children’s privacy
+
+StreamBox is not directed at children under 13.
+
+## Changes
+
+We may update this policy. Material changes will be reflected by bumping the “Last updated” date and in-app notice when required.
+
+## Contact
+
+Questions: alicious.apps@gmail.com
