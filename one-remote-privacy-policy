@@ -1,0 +1,74 @@
+# Privacy Policy
+
+**Last updated:** 2026-07-17
+
+OneRemote ("the app") lets you discover and control Smart TVs (LG, Android TV, Samsung, Roku,
+Vizio) and, via a Broadlink RM4 hub, climate/fan/light devices — all over your home Wi-Fi
+network. This policy explains what the app does — and does not do — with your data.
+
+## Summary
+
+Controlling your TVs and appliances happens entirely on your local network — that traffic never
+reaches OneRemote, Google, or anyone else. Separately, the app uses Google Analytics for Firebase,
+Firebase Crashlytics, and Google AdMob to understand usage, diagnose crashes, and show ads that
+keep the app free. Advertising and analytics identifiers are only used with the consent (or
+permission) you're asked for, as described below.
+
+## What the app accesses to control your devices
+
+- **Local network access** — to find TVs and Broadlink hubs on your Wi-Fi network and to send
+  remote-control commands (power, volume, navigation, temperature, etc.) directly to the device
+  you pair with. This traffic never leaves your local network.
+- **Device list** — the name, brand, and IP address of each TV, hub, and appliance you add is
+  stored on your device (not in the cloud) so you don't have to re-enter it every time you open
+  the app.
+- **Pairing secrets** — the token or key each device gives you during pairing is stored
+  separately, using the operating system's secure storage (iOS Keychain / Android Keystore).
+
+Neither is ever transmitted anywhere except back to the paired device itself, and both are
+deleted from your device if you remove that device or clear all paired devices in Settings.
+
+## Analytics and crash reporting
+
+The app uses **Google Analytics for Firebase** and **Firebase Crashlytics** to understand which
+features are used and to diagnose crashes/errors. The events sent are deliberately limited to a
+small, non-identifying payload — brand names, which key or action was used, and whether an
+operation succeeded — plus standard device/app diagnostics (OS version, app version, crash stack
+traces). We do **not** send your TV's or hub's IP address, device name, or any local-network
+identifier to Firebase.
+
+## Advertising
+
+The app shows banner and occasional interstitial ads via **Google AdMob** to support free access
+to the app, on the Devices and Settings screens only (never during an active remote-control
+session). AdMob and its partners may use an advertising identifier (Apple's IDFA or Android's
+Advertising ID) to serve and measure ads.
+
+- **On iOS**, the app requests App Tracking Transparency permission before any ad that could use
+  the IDFA is requested. If you decline, ads are still shown but are not personalized to you.
+- **In the EEA, UK, and Switzerland**, the app shows a consent form (via Google's User Messaging
+  Platform) before requesting any ads, so you can choose whether ads are personalized.
+- You can review or change your ad consent choices at any time from AdMob's privacy options form,
+  where offered.
+
+## What the app does not do
+
+- It does not require or support user accounts, sign-in, or cloud sync.
+- It does not send your TV/hub IP address, device name, or local-network traffic anywhere outside
+  your home network.
+- It does not sell your data.
+
+## Children's privacy
+
+OneRemote is not directed at children under 13. It does not knowingly collect personal
+information from children, and does not serve personalized ads to any user who has not provided
+the consent/permission described above.
+
+## Changes to this policy
+
+If this policy changes, this page will be updated and the "Last updated" date above will change
+accordingly.
+
+## Contact
+
+Questions about this policy can be sent to: alicious.apps@gmail.com
