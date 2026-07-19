@@ -1,67 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Legal — Alicious Apps</title>
-  <style>
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 2em; max-width: 640px; margin: 0 auto; color: #111; }
-    h1 { font-size: 1.5em; margin-bottom: 0.2em; }
-    p.sub { color: #666; margin-top: 0; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1.5em; }
-    td { padding: 0.6em 0; border-bottom: 1px solid #eee; }
-    td.app { font-weight: 600; }
-    a { color: #2563EB; text-decoration: none; margin-right: 1em; }
-    a:hover { text-decoration: underline; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Documents — Alicious Apps</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --panel:#161923;
+    --line:#262b38;
+    --text:#e7e9ee;
+    --muted:#8b90a0;
+    --accent:#5b8cff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:4.5em 1.5em 5em;
+  }
+  header{margin-bottom:2.5em;}
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.72em;
+    color:var(--accent);
+    font-weight:600;
+    margin:0 0 .6em;
+  }
+  h1{
+    font-size:2em;
+    margin:0 0 .3em;
+    letter-spacing:-.01em;
+  }
+  p.sub{
+    color:var(--muted);
+    margin:0;
+    font-size:.98em;
+    line-height:1.5;
+  }
+  .search{
+    width:100%;
+    margin-top:2em;
+    padding:.75em 1em;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    color:var(--text);
+    font-size:.95em;
+  }
+  .search:focus{outline:none;border-color:var(--accent);}
+  .search::placeholder{color:var(--muted);}
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:2em;
+  }
+  tr{border-bottom:1px solid var(--line);}
+  tr:last-child{border-bottom:none;}
+  td{padding:.9em .2em;vertical-align:middle;}
+  td.app{
+    font-weight:600;
+    font-size:.98em;
+  }
+  td.links{text-align:right;white-space:nowrap;}
+  a.doc{
+    color:var(--accent);
+    text-decoration:none;
+    font-size:.88em;
+    margin-left:1.2em;
+    padding:.3em .1em;
+    border-bottom:1px solid transparent;
+  }
+  a.doc:hover{border-bottom-color:var(--accent);}
+  a.doc:first-child{margin-left:0;}
+  tr.hidden{display:none;}
+  footer{
+    margin-top:3em;
+    padding-top:1.5em;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:.82em;
+  }
+  footer a{color:var(--muted);}
+</style>
 </head>
 <body>
-  <h1>Legal Documents</h1>
-  <p class="sub">Privacy policiey Alicious Apps.</p>
-  <table>
-    <tr><td class="app">AI Imagehref="./ai-image-generator-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Animal Shref="./animal-sounds-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Automobihref="./automobile-catalog-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Baby Trahref="./baby-tracker-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">CineWisehref="./cine-wise-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Duty Phahref="./duty-pharmacies-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Fancy Dehref="./fancy-decisions.html">Legal</a></td></tr>
-    <tr><td class="app">Fiat Radhref="./fiat-radio-code-privacy.html">Privacy</a> <a
-href="./fiat-radio-code-terms.ht
-    <tr><td class="app">Ford</td><td><a href="./ford-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">FRD Radihref="./frd-radio-code-privacy.html">Privacy</a></td></tr>
-    <tr><td class="app">Go Out</acy-policy">Privacy</a></td></tr>
-    <tr><td class="app">GTA Guide</td><td><a
-href="./gta-guide-privacy-policy
-    <tr><td class="app">IMEI App</td><td><a
-href="./imei-app-privacy-policy.
-    <tr><td class="app">Invoice Maker</td><td><a
-href="./invoice-maker-privacy.hthref="./invoice-maker-terms.html">Terms</a></td></tr>
-    <tr><td class="app">Line-uphref="./line-up-builder-privacy.html">Privacy</a> <a
-href="./lineup-builder-terms.htm
-    <tr><td class="app">Muslim</td><td><a href="./muslim-privacy-policy">Privacy</a> <a
-href="./muslim-terms-conditions"
-    <tr><td class="app">One Remote</td><td><a
-href="./one-remote-privacy-polic
-    <tr><td class="app">Password Generator</td><td><a
-href="./password-generator-privatr>
-    <tr><td class="app">PDF Master</td><td><a href="./pdf-master-privacy.html">Privacy</a> <a
-href="./pdf-master-terms.html">T
-    <tr><td class="app">Poster Map</td><td><a
-href="./poster-map-privacy-polichref="./poster-map-terms.html">Terms</a></td></tr>
-    <tr><td class="app">Renault<href="./renault-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Rhythmlyhref="./rhythmly-massager-privacy.html">Privacy</a> <a
-href="./rhythmly-massager-terms.
-    <tr><td class="app">RN Radio Code</td><td><a
-href="./rn-radio-code-privacy.hthref="./rn-radio-code-terms.html">Terms</a></td></tr>
-    <tr><td class="app">SafeCam<rivacy-policy.html">Privacy</a><a href="./safe-cam-terms-conditions.html">Terms</a></td></tr>
-    <tr><td class="app">Size Chahref="./size-chart-pro-privacy-policy.html">Privacy</a> <a
-href="./size-chart-pro-terms.htm
-    <tr><td class="app">SmokeFree Hero</td><td><a
-href="./smokefree-hero-privacy.hhref="./smokefree-hero-terms.html">Terms</a></td></tr>
-    <tr><td class="app">Space Heero-privacy.html">Privacy</a> <ahref="./space-hero-terms.html">Terms</a></td></tr>
-    <tr><td class="app">StreamBohref="./stream-box-privacy-policy">Privacy</a></td></tr>
-    <tr><td class="app">Walkie</acy-policy">Privacy</a></td></tr>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Alicious Apps</p>
+    <h1>Legal Documents</h1>
+    <p class="sub">Privacy policies and terms of use for every app in this collection.</p>
+  </header>
+
+  <input class="search" id="search" type="text" placeholder="Search an app…" oninput="filterRows()">
+
+  <table id="doc-table">
+    <tbody>
+      <tr><td class="app">AI Image Generator</td><td class="links"><a class="doc" href="./ai-image-generator-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Animal Sounds</td><td class="links"><a class="doc" href="./animal-sounds-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Automobile Catalog</td><td class="links"><a class="doc" href="./automobile-catalog-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Baby Tracker</td><td class="links"><a class="doc" href="./baby-tracker-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">CineWise</td><td class="links"><a class="doc" href="./cine-wise-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Duty Pharmacies</td><td class="links"><a class="doc" href="./duty-pharmacies-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Fancy Decisions</td><td class="links"><a class="doc" href="./fancy-decisions.html">Legal</a></td></tr>
+      <tr><td class="app">Fiat Radio Code</td><td class="links"><a class="doc" href="./fiat-radio-code-privacy.html">Privacy</a><a class="doc" href="./fiat-radio-code-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Ford</td><td class="links"><a class="doc" href="./ford-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">FRD Radio Code</td><td class="links"><a class="doc" href="./frd-radio-code-privacy.html">Privacy</a></td></tr>
+      <tr><td class="app">Go Out</td><td class="links"><a class="doc" href="./go-out-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">GTA Guide</td><td class="links"><a class="doc" href="./gta-guide-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">IMEI App</td><td class="links"><a class="doc" href="./imei-app-privacy-policy.html">Privacy</a></td></tr>
+      <tr><td class="app">Invoice Maker</td><td class="links"><a class="doc" href="./invoice-maker-privacy.html">Privacy</a><a class="doc" href="./invoice-maker-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Line-up Builder</td><td class="links"><a class="doc" href="./line-up-builder-privacy.html">Privacy</a><a class="doc" href="./lineup-builder-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Muslim</td><td class="links"><a class="doc" href="./muslim-privacy-policy">Privacy</a><a class="doc" href="./muslim-terms-conditions">Terms</a></td></tr>
+      <tr><td class="app">One Remote</td><td class="links"><a class="doc" href="./one-remote-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Password Generator</td><td class="links"><a class="doc" href="./password-generator-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">PDF Master</td><td class="links"><a class="doc" href="./pdf-master-privacy.html">Privacy</a><a class="doc" href="./pdf-master-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Poster Map</td><td class="links"><a class="doc" href="./poster-map-privacy-policy.html">Privacy</a><a class="doc" href="./poster-map-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Renault</td><td class="links"><a class="doc" href="./renault-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Rhythmly Massager</td><td class="links"><a class="doc" href="./rhythmly-massager-privacy.html">Privacy</a><a class="doc" href="./rhythmly-massager-terms.html">Terms</a></td></tr>
+      <tr><td class="app">RN Radio Code</td><td class="links"><a class="doc" href="./rn-radio-code-privacy.html">Privacy</a><a class="doc" href="./rn-radio-code-terms.html">Terms</a></td></tr>
+      <tr><td class="app">SafeCam</td><td class="links"><a class="doc" href="./safe-cam-privacy-policy.html">Privacy</a><a class="doc" href="./safe-cam-terms-conditions.html">Terms</a></td></tr>
+      <tr><td class="app">Size Chart Pro</td><td class="links"><a class="doc" href="./size-chart-pro-privacy-policy.html">Privacy</a><a class="doc" href="./size-chart-pro-terms.html">Terms</a></td></tr>
+      <tr><td class="app">SmokeFree Hero</td><td class="links"><a class="doc" href="./smokefree-hero-privacy.html">Privacy</a><a class="doc" href="./smokefree-hero-terms.html">Terms</a></td></tr>
+      <tr><td class="app">Space Hero</td><td class="links"><a class="doc" href="./space-hero-privacy.html">Privacy</a><a class="doc" href="./space-hero-terms.html">Terms</a></td></tr>
+      <tr><td class="app">StreamBox</td><td class="links"><a class="doc" href="./stream-box-privacy-policy">Privacy</a></td></tr>
+      <tr><td class="app">Walkie</td><td class="links"><a class="doc" href="./walkie-privacy-policy">Privacy</a></td></tr>
+    </tbody>
   </table>
+
+  <footer>
+    aligkts/PrivacyPolicies · <a href="https://github.com/aligkts/PrivacyPolicies">GitHub</a>
+  </footer>
+</div>
+
+<script>
+function filterRows(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  document.querySelectorAll('#doc-table tbody tr').forEach(tr=>{
+    const name = tr.querySelector('.app').textContent.toLowerCase();
+    tr.classList.toggle('hidden', q && !name.includes(q));
+  });
+}
+</script>
 </body>
 </html>
