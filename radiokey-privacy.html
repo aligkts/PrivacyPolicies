@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiokey Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --ink: #1a1a1a; --muted: #666; --bg: #fff; --accent: #b87600; }
+@media (prefers-color-scheme: dark) { :root { --ink: #eee; --muted: #999; --bg: #111; --accent: #ffb020; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: var(--accent); }
+h1 { font-size: 2rem; margin: 0.5em 0; }
+h2 { margin-top: 2em; }
+.muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Radiokey Privacy Policy</h1>
+<p class="muted">Last updated: 19 November 2026</p>
+
+<p>Radiokey finds the unlock code for a car radio from the radio's serial number. This policy explains what the app collects, why, and who processes it. Radiokey has no sign-up, no advertising and no tracking across other apps or websites.</p>
+
+<p>The app is published by Ali Göktaş, İstanbul, Türkiye, who is responsible for the data described here. Contact: <a href="mailto:alicious.apps@gmail.com">alicious.apps@gmail.com</a>.</p>
+
+<h2>What we collect</h2>
+<ul>
+<li><strong>Anonymous user ID.</strong> On first launch the app creates a random anonymous account. It is not tied to your name, email or phone number. It lets the app show your unlocked codes again under "My codes".</li>
+<li><strong>Radio model and serial number.</strong> The serial you enter is sent to our server to check and calculate the code. We do not store the serial in plain text: we keep a one-way keyed hash (so a radio paid for once is not charged twice), the last three characters as a hint, the radio model and the calculated code.</li>
+<li><strong>Purchase history.</strong> When you buy a code, the App Store transaction is checked through RevenueCat. We keep the transaction ID and the time of purchase so the code stays unlocked for you.</li>
+<li><strong>Usage and diagnostics.</strong> The app uses Firebase Analytics and Crashlytics (Google) for anonymous usage events (for example "model selected", "code found", "purchase completed") and crash reports. These events never contain your serial number or your code. Advertising features are switched off and no advertising identifier is used.</li>
+</ul>
+
+<h2>What we do not collect</h2>
+<p>No name, email, phone number, location, contacts, photos or payment card details. Payments are handled entirely by Apple.</p>
+
+<h2>Who processes the data</h2>
+<ul>
+<li><strong>Supabase</strong> hosts our server and database.</li>
+<li><strong>PELock</strong> calculates the radio code. The serial and model are sent to its API for the calculation only; PELock does not keep them.</li>
+<li><strong>RevenueCat</strong> verifies App Store purchases.</li>
+<li><strong>Google Firebase</strong> receives the anonymous usage events and crash reports.</li>
+<li><strong>Apple</strong> processes the payment.</li>
+</ul>
+<p>We do not sell or share your data with anyone else and do not use it for advertising.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+<li>Unlock records (hash, hint, model, code, purchase) are kept for as long as the service runs, so your codes remain available and a radio paid for once stays free, unless you ask us to delete them.</li>
+<li>Analytics data is kept for 2 months.</li>
+<li>Crash reports are kept according to Firebase Crashlytics' standard retention.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>You can ask for access to, or deletion of, the records linked to your use of the app by writing to <a href="mailto:alicious.apps@gmail.com">alicious.apps@gmail.com</a>. Include the radio model and the last three characters of the serial shown in the app (never the full serial). Deleting the app removes the anonymous ID from your device; codes are then no longer shown under "My codes" on a new install.</p>
+
+<h2>Children</h2>
+<p>Radiokey is not directed at children and does not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date above will change and the new version will be published on this page.</p>
+
+<h2>Contact</h2>
+<p>Ali Göktaş, İstanbul, Türkiye<br>
+<a href="mailto:alicious.apps@gmail.com">alicious.apps@gmail.com</a></p>
+</main>
+</body>
+</html>
