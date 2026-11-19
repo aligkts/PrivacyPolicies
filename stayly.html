@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stayly: Country Days Tracker</title>
+<meta name="description" content="Count the days you spend in each country. Schengen 90/180, 183-day tax residency, UK and US day counts. Counted on your iPhone, never uploaded.">
+<meta property="og:title" content="Stayly: Country Days Tracker">
+<meta property="og:description" content="Know how many days you have left in Schengen, the UK, the US or any country. Counted on your iPhone, never uploaded.">
+<meta property="og:image" content="https://aligkts.github.io/PrivacyPolicies/stayly-assets/screen-1.jpg">
+<meta name="apple-itunes-app" content="app-id=6836549966">
+<style>
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --ink: #16202a;
+  --sub: #5b6672;
+  --accent: #0f7a7a;
+  --accent-ink: #ffffff;
+  --rule: #dde2e7;
+  --sun: #ffd166;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1418; --card: #172027; --ink: #e9eef2; --sub: #9aa6b1; --accent: #4cc3c3; --accent-ink: #0f1418; --rule: #26313a; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+.hero {
+  background: linear-gradient(135deg, #00868b, #333d9e);
+  color: #ffffff;
+  padding: 56px 0 64px;
+}
+.hero .wrap { display: grid; gap: 20px; justify-items: start; }
+.hero svg { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.hero h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; letter-spacing: -0.01em; }
+.hero h1 span { color: var(--sun); }
+.hero p { margin: 0; max-width: 560px; font-size: 1.15rem; color: rgba(255,255,255,0.88); }
+.cta {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #16202a;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cta:hover { background: var(--sun); }
+.hero .note { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+
+.shots {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 32px 16px 8px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.shots img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: auto;
+  border-radius: 18px;
+  scroll-snap-align: start;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+section { padding: 40px 0 8px; }
+h2 { margin: 0 0 16px; font-size: 1.6rem; line-height: 1.2; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--sub); font-size: 0.97rem; }
+.pro { font-size: 0.75rem; font-weight: 700; color: var(--accent); letter-spacing: 0.04em; margin-left: 6px; }
+
+.plans { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.plan .price { font-size: 1.6rem; font-weight: 700; margin: 4px 0 6px; color: var(--ink); }
+
+.privacy { border-left: 4px solid var(--accent); }
+
+footer { margin: 56px 0 0; padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--sub); font-size: 0.9rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 12px; }
+footer p { margin: 6px 0; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="Stayly icon">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00868b"/><stop offset="1" stop-color="#333d9e"/></linearGradient>
+        <clipPath id="globe"><circle cx="512" cy="512" r="214"/></clipPath>
+      </defs>
+      <rect width="1024" height="1024" fill="url(#bg)"/>
+      <circle cx="512" cy="512" r="330" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="64"/>
+      <circle cx="512" cy="512" r="330" fill="none" stroke="#ffd166" stroke-width="64" stroke-linecap="round" stroke-dasharray="1451 2074" transform="rotate(-90 512 512)"/>
+      <g fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round">
+        <circle cx="512" cy="512" r="214"/>
+        <g clip-path="url(#globe)">
+          <ellipse cx="512" cy="512" rx="96" ry="214"/>
+          <line x1="298" y1="512" x2="726" y2="512"/>
+          <path d="M318 418 Q512 456 706 418"/>
+          <path d="M318 606 Q512 568 706 606"/>
+        </g>
+      </g>
+    </svg>
+    <h1>Know your <span>days left</span>, in every country.</h1>
+    <p>Stayly counts the days you spend in each country and shows how close you are to Schengen 90/180, 183-day tax rules, the UK and US day tests, or any limit you set. Counted on your iPhone, never uploaded.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6836549966">Get Stayly on the App Store</a>
+    <span class="note">For iPhone. Free to start; Pro unlocks everything.</span>
+  </div>
+</header>
+
+<div class="shots" aria-label="App screenshots">
+  <img src="stayly-assets/screen-1.jpg" alt="Today screen showing Schengen days left" loading="lazy">
+  <img src="stayly-assets/screen-2.jpg" alt="Schengen rule detail with days used and the next free date" loading="lazy">
+  <img src="stayly-assets/screen-3.jpg" alt="Planner checking a future trip against every limit" loading="lazy">
+  <img src="stayly-assets/screen-4.jpg" alt="Tracking opt-in page explaining that only the country is saved on the iPhone" loading="lazy">
+</div>
+
+<main class="wrap">
+
+<section>
+  <h2>Every limit that matters to you</h2>
+  <div class="grid">
+    <div class="card"><h3>Schengen 90/180</h3><p>Days used, days left, and the longest stay you can start tomorrow.</p></div>
+    <div class="card"><h3>183-day tax residency</h3><p>For any country, by calendar year or tax year.</p></div>
+    <div class="card"><h3>UK Statutory Residence Test</h3><p>Midnight rule and the 6 April tax year.</p></div>
+    <div class="card"><h3>US Substantial Presence Test</h3><p>Weighted days from the current and two prior years.</p></div>
+    <div class="card"><h3>Custom limits<span class="pro">PRO</span></h3><p>Any country or group of countries, any number of days.</p></div>
+    <div class="card"><h3>Official sources</h3><p>Each rule links to the authority that sets it.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Days log themselves</h2>
+  <div class="grid">
+    <div class="card"><h3>Automatic tracking<span class="pro">PRO</span></h3><p>Low-power location changes note the country each day, in the background.</p></div>
+    <div class="card"><h3>Past trips from photos<span class="pro">PRO</span></h3><p>Rebuild earlier travel from the date and place of the photos you allow.</p></div>
+    <div class="card"><h3>By hand</h3><p>Add a trip or a single day in seconds. Days that need a look are flagged.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Plan before you book</h2>
+  <div class="grid">
+    <div class="card"><h3>Trip planner<span class="pro">PRO</span></h3><p>Check a future trip against every limit before you commit to it.</p></div>
+    <div class="card"><h3>Limit alerts<span class="pro">PRO</span></h3><p>A heads-up when a limit is getting close.</p></div>
+    <div class="card"><h3>PDF and CSV export<span class="pro">PRO</span></h3><p>A clean record for your accountant or a visa application.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Private by design</h2>
+  <div class="card privacy">
+    <p>No account. Your days are stored only on your iPhone. Only the country is saved, and your location never leaves the device. Read the <a href="stayly-privacy.html">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <div class="plans">
+    <div class="card plan"><h3>Free</h3><div class="price">$0</div><p>Log days by hand and follow one rule.</p></div>
+    <div class="card plan"><h3>Pro yearly</h3><div class="price">$24.99<span style="font-size:1rem;font-weight:400;color:var(--sub)"> / year</span></div><p>Everything in Stayly. Renews yearly unless cancelled.</p></div>
+    <div class="card plan"><h3>Pro lifetime</h3><div class="price">$49.99</div><p>Everything in Stayly, paid once.</p></div>
+  </div>
+  <p style="color:var(--sub);font-size:0.9rem;margin-top:12px">US prices. The App Store shows the price for your country.</p>
+</section>
+
+<section>
+  <h2>Important</h2>
+  <p style="color:var(--sub);margin:0">Stayly gives information, not legal or tax advice. Rules have exceptions; check with the authority or an adviser before you rely on a number.</p>
+</section>
+
+<footer>
+  <nav>
+    <a href="https://apps.apple.com/app/id6836549966">App Store</a>
+    <a href="stayly-support.html">Support</a>
+    <a href="stayly-privacy.html">Privacy Policy</a>
+    <a href="mailto:alicious.apps@gmail.com">alicious.apps@gmail.com</a>
+  </nav>
+  <p>© 2026 Ali Göktaş. Apple, iPhone and App Store are trademarks of Apple Inc.</p>
+  <p>Screenshots use the 3D model <a href="https://sketchfab.com/3d-models/iphone-17-pro-max-87fc1df741384124a8ce0226d2b2058d">"iPhone 17 Pro Max"</a> by <a href="https://sketchfab.com/MG990">MajdyModels</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+
+</main>
+</body>
+</html>
