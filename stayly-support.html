@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stayly Support</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --ink: #16202a;
+  --sub: #5b6672;
+  --accent: #0f7a7a;
+  --rule: #dde2e7;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1418; --ink: #e9eef2; --sub: #9aa6b1; --accent: #4cc3c3; --rule: #26313a; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+.eyebrow { margin: 0; color: var(--accent); font-weight: 600; letter-spacing: 0.02em; }
+h1 { margin: 4px 0 4px; font-size: 2.2rem; line-height: 1.15; }
+h2 { margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 1.3rem; }
+h3 { margin: 24px 0 4px; font-size: 1.05rem; }
+.meta { margin: 0 0 24px; color: var(--sub); font-size: 0.9rem; }
+.lead { font-size: 1.1rem; }
+a { color: var(--accent); }
+ul { padding-left: 1.2em; }
+li { margin: 6px 0; }
+.footer { margin-top: 48px; color: var(--sub); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Stayly</p>
+<h1>Support</h1>
+<p class="lead">Questions, a wrong count or an idea? Write to <a href="mailto:alicious.apps@gmail.com">alicious.apps@gmail.com</a>. Please include your iPhone model, iOS version and the Stayly version from Settings → About.</p>
+
+<h2>Counting days</h2>
+
+<h3>How does automatic tracking work?</h3>
+<p>Stayly uses low-power location changes from iOS to note the country you are in each day. Only the country is saved, on your iPhone. Turn it on in Settings → Tracking → Automatic tracking.</p>
+
+<h3>Why should I allow location "Always"?</h3>
+<p>With "While Using", Stayly can only count a day when you open the app. With "Always", it notes the country in the background, so days are counted even if you never open it. Change it in iPhone Settings → Stayly → Location → Always, or tap Open iPhone Settings in Stayly → Settings → Tracking.</p>
+
+<h3>A day is missing or in the wrong country</h3>
+<p>Open the Days tab, tap the day and set the countries yourself. Days with no record, or where the country at midnight is unclear, are listed under "Check days" on the Today tab. Days are usually missed when location access is "While Using" or turned off, or while the iPhone was switched off.</p>
+
+<h3>How are travel days counted?</h3>
+<p>A day on which you were in two countries can count for both. Schengen and the US count use every country you were in; the UK count uses where you were at midnight. For 183-day and custom limits you choose in Settings → Profile → Days in two countries.</p>
+
+<h3>Can I add past trips?</h3>
+<p>Yes. Tap + in the Days tab to add a trip by hand, or use Settings → Data → Import past trips from photos (Pro). Stayly reads only the date and place of the photos you allow it to see.</p>
+
+<h2>Stayly Pro</h2>
+
+<h3>What does Pro include?</h3>
+<p>Automatic tracking, every rule and custom limits, the trip planner and limit alerts, photo import, and PDF and CSV export. The free version lets you log days by hand with one rule.</p>
+
+<h3>I bought Pro but the app doesn't show it</h3>
+<p>Go to Settings → Restore purchases while signed in to the same Apple account you bought it with.</p>
+
+<h3>How do I cancel or get a refund?</h3>
+<p>Cancel the yearly plan any time in iPhone Settings → your name → Subscriptions → Stayly, or Stayly → Settings → Manage subscription. It stays active until the end of the paid year. Lifetime is a one-time purchase. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h2>Your data</h2>
+
+<h3>Where are my days stored?</h3>
+<p>Only on your iPhone. Stayly has no account and no server copy of your days. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+<h3>How do I move my days to a new iPhone?</h3>
+<p>Restore the new iPhone from an iCloud or computer backup of the old one; app data comes with it. Export a PDF or CSV first if you want a copy of your days anyway.</p>
+
+<h3>How do I delete my data?</h3>
+<p>Delete the Stayly app. All days, rules and settings are removed with it.</p>
+
+<h2>Important</h2>
+<p>Stayly gives information, not legal or tax advice. Rules have exceptions; check with the authority or an adviser before you rely on a number. Each rule in the app links to its official source.</p>
+
+<h2>Credits</h2>
+<ul>
+  <li>Country borders: <a href="https://www.naturalearthdata.com">Natural Earth</a> (public domain).</li>
+  <li>App Store images use the 3D model <a href="https://sketchfab.com/3d-models/iphone-17-pro-max-87fc1df741384124a8ce0226d2b2058d">"iPhone 17 Pro Max"</a> by <a href="https://sketchfab.com/MG990">MajdyModels</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+</ul>
+
+<p class="footer"><a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
